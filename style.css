@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+/*Estilo del cuerpo de pagina*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    background-color: #053d74;
+}
+
+/*Header, logo y titulo*/
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #065faa;
+    color: rgb(64, 171, 255 );
+}
+/*Estilo de la barra de navegacion*/
+.navbar {
+    display: flex;
+    background-color: #077cb6;
+}
+/*Estilo de los enlaces de la barra de navegacion*/
+.navbar a{
+    color: #063970    ;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+/*Canviar de color cuando paso el moause*/
+.navbar a:hover {
+    background-color: #063970;
+    color: #077cb6 ;
+}
+
+/*Contenerdor de columna*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Barra lateral*/
+.side {
+    flex: 30%;
+    background-color: rgb(64, 171, 255 );
+    padding: 20px;
+}
+/*Columna principal*/
+.main{
+    flex: 70%;
+    background-color: rgb(64, 171, 255 );
+    padding: 20px;
+}
+/*Imagen*/
+.imagenfalsa {
+    width: 100%;
+    padding: 20px;
+}
+/*Footer*/
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: rgb(0, 97, 171);
+}
+/*flex responsive*/
+@media screen and (max-width: 700px) {
+    .row
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+/*Ovalado*/
+.oval {
+    border-radius: 50%;
+    border: 1rem solid rgb(0, 97, 171);
+}
